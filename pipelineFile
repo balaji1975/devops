@@ -5,7 +5,7 @@ pipeline {
         stage('scm') {
 	    agent { label "Controller" }
             steps {
-		dir ("appname") {
+		dir ("${appName}") {
 			git credentialsId: 'Balaji-GitHub', branch: "main",
 			url: "${gitUrl}";
 		}
