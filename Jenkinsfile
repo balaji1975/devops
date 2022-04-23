@@ -11,6 +11,7 @@ pipeline {
         {
             message 'Please confirm to proceed to build stage'
             ok 'Yes'
+            submitter 'regeti'
         }
         stage('Build step') {
             steps {
