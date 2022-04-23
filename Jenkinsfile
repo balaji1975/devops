@@ -7,7 +7,8 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        input
+       
+       
         stage('Build step') {
             steps {
                 echo 'Starting Build'
