@@ -5,9 +5,6 @@ pipeline {
         stage('scm') {
 	    agent { label "Controller" }
             steps {
-                sh """
-			git config --system core.longpaths true
-		"""
 		dir ("appname") {
 			git credentialsId: 'balaji1975', branch: "main",
 			url: "git@github.com:balaji1975/devops.git";
