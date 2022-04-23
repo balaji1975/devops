@@ -7,7 +7,7 @@ pipeline {
             steps {
 		dir ("appname") {
 			git credentialsId: 'Balaji-GitHub', branch: "main",
-			url: "git@github.com:balaji1975/java-hello-world-with-maven.git";
+			url: "${gitUrl}";
 		}
             }
         }
