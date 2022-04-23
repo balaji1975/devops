@@ -8,12 +8,11 @@ pipeline {
             }
         }
         
-        Stage('acceptence') {
+        stage('acceptence') {
             input
                {
             message 'Please confirm to proceed to build stage'
             ok 'Yes'
-            submitter 'regeti'
                }
         }
        
