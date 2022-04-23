@@ -6,7 +6,7 @@ pipeline {
 	    agent { label "Controller" }
             steps {
 		dir ("appname") {
-			git credentialsId: 'balaji1975', branch: "main",
+			git credentialsId: 'Balaji-GitHub', branch: "main",
 			url: "git@github.com:balaji1975/devops.git";
 		}
             }
