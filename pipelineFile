@@ -11,5 +11,15 @@ pipeline {
 		}
             }
         }
+	stage ('build'){
+	    agent { label "Controller" }
+	    steps {
+		sh """
+			cd appname
+			mvn clean
+			mvn compile
+		"""
+            }
+	}
     }
 }
