@@ -16,10 +16,11 @@ pipeline {
             input {
 		message "Should we proceed?"
 		ok "Yes"
+		submitter "regeti"
             }	
 	    steps {
 		sh """
-			cd appname
+			cd "${appName}"
 			mvn clean
 			mvn compile
 		"""
