@@ -16,7 +16,7 @@ pipeline {
             input {
 		message "Should we proceed?"
 		ok "Yes"
-		submitter "regeti"
+		submitter "Srinivasa R. Regeti"
             }	
 	    steps {
 		sh """
