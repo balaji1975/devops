@@ -13,11 +13,6 @@ pipeline {
         }
 	stage ('build'){
 	    agent { label "Controller" }
-            input {
-		message "Should we proceed?"
-		ok "Yes"
-		submitter "Srinivasa R. Regeti"
-            }	
 	    steps {
 		sh """
 			cd "${appName}"
