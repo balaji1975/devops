@@ -9,8 +9,8 @@ pipeline {
         }
         input
         {
-            message "Please confirm to proceed to build stage"
-            ok "Yes"
+            message 'Please confirm to proceed to build stage'
+            ok 'Yes'
         }
         stage('Build step') {
             steps {
