@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('scm') {
+	    agent { label "Controller" }
             steps {
                 echo 'Hello World'
             }
